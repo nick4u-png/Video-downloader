@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download Facebook videos in HD, SD, or MP3 format. Fast, free, and easy to use Facebook video downloader.">
+    <title>FB Video Downloader - Download Facebook Videos Free</title>
+    <link rel="stylesheet" href="facebook-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-facebook-f"></i>
+                <span>FB Video Downloader</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="facebook.html" class="active">Facebook Downloader</a>
+                <a href="youtube.html">YouTube Downloader</a>
+                <a href="instagram.html">Instagram Downloader</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Download Facebook Videos</h1>
+                <p>Download Facebook videos in HD, SD, or MP3 format - Free & Fast</p>
+                
+                <div class="download-form">
+                    <div class="input-group">
+                        <input 
+                            type="url" 
+                            id="videoUrl" 
+                            placeholder="Paste Facebook video URL here..."
+                            class="url-input"
+                        >
+                        <button id="downloadBtn" class="download-btn">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+                </div>
+
+                <div id="loading" class="loading hidden">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <span>Processing video...</span>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results" class="results hidden">
+                <div class="video-info">
+                    <img id="videoThumbnail" src="" alt="Video thumbnail" class="thumbnail">
+                    <div class="info">
+                        <h3 id="videoTitle"></h3>
+                        <p id="videoDuration"></p>
+                    </div>
+                </div>
+
+                <div class="download-options">
+                    <div class="download-card">
+                        <i class="fas fa-video"></i>
+                        <h4>MP4 HD</h4>
+                        <p>High Quality</p>
+                        <button class="option-btn" data-quality="hd">
+                            <i class="fas fa-download"></i>
+                            Download HD
+                        </button>
+                    </div>
+
+                    <div class="download-card">
+                        <i class="fas fa-video"></i>
+                        <h4>MP4 SD</h4>
+                        <p>Standard Quality</p>
+                        <button class="option-btn" data-quality="sd">
+                            <i class="fas fa-download"></i>
+                            Download SD
+                        </button>
+                    </div>
+
+                    <div class="download-card">
+                        <i class="fas fa-music"></i>
+                        <h4>MP3 Audio</h4>
+                        <p>Audio Only</p>
+                        <button class="option-btn" data-quality="mp3">
+                            <i class="fas fa-download"></i>
+                            Download MP3
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq">
+                <h2>How to Download Facebook Videos?</h2>
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <h4>1. Copy the video URL</h4>
+                        <p>Go to the Facebook video you want to download and copy its URL from the address bar.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>2. Paste the URL</h4>
+                        <p>Paste the copied URL into the input field above and click the "Download" button.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>3. Choose format</h4>
+                        <p>Select your preferred format (HD, SD, or MP3) and click the download button.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>This tool is for personal use only. We do not host or store any videos.</p>
+            <p>&copy; 2024 FB Video Downloader. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="facebook-script.js"></script>
+</body>
+</html>
